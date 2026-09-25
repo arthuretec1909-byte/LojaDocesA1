@@ -28,12 +28,184 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            lblNomeDoce = new Label();
+            lblPrecoUnitario = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            button1 = new Button();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            SuspendLayout();
+            // 
+            // lblNomeDoce
+            // 
+            lblNomeDoce.AutoSize = true;
+            lblNomeDoce.Location = new Point(97, 20);
+            lblNomeDoce.Name = "lblNomeDoce";
+            lblNomeDoce.Size = new Size(70, 15);
+            lblNomeDoce.TabIndex = 0;
+            lblNomeDoce.Text = "Nome Doce";
+            lblNomeDoce.Click += label1_Click;
+            // 
+            // lblPrecoUnitario
+            // 
+            lblPrecoUnitario.AutoSize = true;
+            lblPrecoUnitario.Location = new Point(97, 64);
+            lblPrecoUnitario.Name = "lblPrecoUnitario";
+            lblPrecoUnitario.Size = new Size(84, 15);
+            lblPrecoUnitario.TabIndex = 1;
+            lblPrecoUnitario.Text = "Peeço Unitário";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(97, 104);
+            label3.Name = "label3";
+            label3.Size = new Size(69, 15);
+            label3.TabIndex = 2;
+            label3.Text = "Quantidade";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(97, 148);
+            label4.Name = "label4";
+            label4.Size = new Size(76, 15);
+            label4.TabIndex = 3;
+            label4.Text = "Idade Cliente";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(97, 228);
+            label5.Name = "label5";
+            label5.Size = new Size(57, 15);
+            label5.TabIndex = 4;
+            label5.Text = "Desconto";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(97, 189);
+            label6.Name = "label6";
+            label6.Size = new Size(40, 15);
+            label6.TabIndex = 5;
+            label6.Text = "Nome";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(97, 342);
+            label7.Name = "label7";
+            label7.Size = new Size(39, 15);
+            label7.TabIndex = 6;
+            label7.Text = "Status";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(97, 269);
+            label8.Name = "label8";
+            label8.Size = new Size(61, 15);
+            label8.TabIndex = 7;
+            label8.Text = "Valor Final";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(97, 300);
+            label9.Name = "label9";
+            label9.Size = new Size(45, 15);
+            label9.TabIndex = 8;
+            label9.Text = "Parcela";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(97, 386);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 9;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(200, 17);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 10;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(200, 148);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(100, 23);
+            textBox2.TabIndex = 11;
+            textBox2.TextChanged += textBox2_TextChanged;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(200, 104);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(100, 23);
+            textBox3.TabIndex = 12;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(200, 64);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(100, 23);
+            textBox4.TabIndex = 13;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox4);
+            Controls.Add(textBox3);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(button1);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(lblPrecoUnitario);
+            Controls.Add(lblNomeDoce);
+            Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private Label lblNomeDoce;
+        private Label lblPrecoUnitario;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Button button1;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private TextBox textBox4;
     }
 }
